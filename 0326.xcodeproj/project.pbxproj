@@ -15,6 +15,8 @@
 		227855531F59443700C106AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 227855511F59443700C106AC /* LaunchScreen.storyboard */; };
 		2278555E1F59443700C106AC /* _326Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2278555D1F59443700C106AC /* _326Tests.m */; };
 		227855691F59443700C106AC /* _326UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 227855681F59443700C106AC /* _326UITests.m */; };
+		227855771F595DFD00C106AC /* app.plist in Resources */ = {isa = PBXBuildFile; fileRef = 227855761F595DFD00C106AC /* app.plist */; };
+		228DE5891F5AF603004E5EA7 /* TMApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 228DE5881F5AF603004E5EA7 /* TMApp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		227855641F59443700C106AC /* 0326UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 0326UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		227855681F59443700C106AC /* _326UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _326UITests.m; sourceTree = "<group>"; };
 		2278556A1F59443700C106AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		227855761F595DFD00C106AC /* app.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = app.plist; sourceTree = "<group>"; };
+		228DE5871F5AF603004E5EA7 /* TMApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMApp.h; sourceTree = "<group>"; };
+		228DE5881F5AF603004E5EA7 /* TMApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMApp.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +115,8 @@
 				227855511F59443700C106AC /* LaunchScreen.storyboard */,
 				227855541F59443700C106AC /* Info.plist */,
 				227855431F59443700C106AC /* Supporting Files */,
+				228DE5871F5AF603004E5EA7 /* TMApp.h */,
+				228DE5881F5AF603004E5EA7 /* TMApp.m */,
 			);
 			path = 0326;
 			sourceTree = "<group>";
@@ -117,6 +124,7 @@
 		227855431F59443700C106AC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				227855761F595DFD00C106AC /* app.plist */,
 				227855441F59443700C106AC /* main.m */,
 			);
 			name = "Supporting Files";
@@ -202,12 +210,14 @@
 		227855381F59443700C106AC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TM;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = tim;
 				TargetAttributes = {
 					2278553F1F59443700C106AC = {
 						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = JULHSND4WY;
+						ProvisioningStyle = Manual;
 					};
 					227855581F59443700C106AC = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -246,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				227855771F595DFD00C106AC /* app.plist in Resources */,
 				227855531F59443700C106AC /* LaunchScreen.storyboard in Resources */,
 				227855501F59443700C106AC /* Assets.xcassets in Resources */,
 				2278554E1F59443700C106AC /* Main.storyboard in Resources */,
@@ -273,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				228DE5891F5AF603004E5EA7 /* TMApp.m in Sources */,
 				2278554B1F59443700C106AC /* ViewController.m in Sources */,
 				227855481F59443700C106AC /* AppDelegate.m in Sources */,
 				227855451F59443700C106AC /* main.m in Sources */,
@@ -426,10 +438,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JULHSND4WY;
 				INFOPLIST_FILE = 0326/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "cn.timdream.-326";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.timdream.326;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "188587d1-107d-41a9-b703-f4ef068b37fb";
+				PROVISIONING_PROFILE_SPECIFIER = Development;
 			};
 			name = Debug;
 		};
@@ -437,10 +452,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JULHSND4WY;
 				INFOPLIST_FILE = 0326/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "cn.timdream.-326";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.timdream.326;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "188587d1-107d-41a9-b703-f4ef068b37fb";
+				PROVISIONING_PROFILE_SPECIFIER = Development;
 			};
 			name = Release;
 		};
@@ -509,6 +527,7 @@
 				2278556F1F59443700C106AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		227855701F59443700C106AC /* Build configuration list for PBXNativeTarget "0326Tests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +536,7 @@
 				227855721F59443700C106AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		227855731F59443700C106AC /* Build configuration list for PBXNativeTarget "0326UITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +545,7 @@
 				227855751F59443700C106AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
